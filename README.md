@@ -81,6 +81,8 @@ Implementation
 Architecture
 ------------
 
+![](media/a88065a2013c866e9ea913456083442a.png)
+
 ### Notes
 
 -   On server side DTO (Data Transfer Object) layer is not implemented.
