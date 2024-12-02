@@ -25,6 +25,7 @@ class UniversityResolver {
     const university = this.repoService.universityRepo.create({
       name: input.name, city: input.city,
       state: input.state, country: input.country,
+      number_of_staff: input.number_of_staff,
     });
     return  this.repoService.universityRepo.save(university);
   }
@@ -43,6 +44,7 @@ class UniversityResolver {
     let updUni = await this.repoService.universityRepo.findOne(input.id);
     updUni.name = input.name; updUni.city = input.city;
     updUni.state = input.state; updUni.country = input.country;
+    updUni.number_of_staff = input.number_of_staff;
     return this.repoService.universityRepo.save(updUni);
   }
 }
