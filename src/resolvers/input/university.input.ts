@@ -11,7 +11,6 @@ class UniversityInput {
   @Field() readonly city: string;
   @Field() readonly state: string;
   @Field() readonly country: string;
-  @Field({ nullable: true }) readonly number_of_staff?: number;
 }
 
 export default UniversityInput;
