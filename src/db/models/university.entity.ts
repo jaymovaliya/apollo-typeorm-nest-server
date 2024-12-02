@@ -16,4 +16,5 @@ export default class University {
 
   @Field() @CreateDateColumn({name: 'created_at'}) createdAt: Date;
   @Field() @UpdateDateColumn({name: 'updated_at'}) updatedAt: Date;
+  @Field({ nullable: true }) @Column({ nullable: true }) number_of_staff?: number;
 }
